@@ -1,2 +1,144 @@
-# English-Panjakent
-Learn english with English Panjakent
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Panjakent — Английский легко</title>
+  <meta name="description" content="English Panjakent — канал в Instagram для изучения английского языка с нуля. Уроки, фразы и мотивация каждый день." />
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:#fff;
+      text-align:center;
+      overflow:hidden;
+      background: linear-gradient(-45deg, #141e30, #243b55, #1a2980, #26d0ce);
+      background-size: 400% 400%;
+      animation: gradientBG 20s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* сияющие круги */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.4;
+      animation: float 12s infinite ease-in-out;
+      filter: blur(50px);
+      z-index: -1;
+    }
+    .circle:nth-child(1) { width:400px; height:400px; background:#ff4ecd; top:10%; left:15%; animation-duration:18s; }
+    .circle:nth-child(2) { width:300px; height:300px; background:#4ecbff; bottom:15%; right:10%; animation-duration:22s; }
+    .circle:nth-child(3) { width:350px; height:350px; background:#ffe14e; top:50%; left:60%; animation-duration:26s; }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-40px) translateX(30px); }
+    }
+
+    main {
+      padding:24px;
+      width:min(900px, 92vw);
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.45);
+    }
+
+    h1 {
+      font-size: clamp(28px, 6vw, 56px);
+      line-height:1.05;
+      letter-spacing:-.02em;
+      text-shadow: 0 6px 24px rgba(0,0,0,.45);
+      animation: fadeIn 0.9s ease both;
+    }
+
+    p.sub {
+      margin:14px auto 26px;
+      font-size: clamp(14px, 2.3vw, 18px);
+      color:#e5f0ff;
+      opacity:.95;
+      max-width: 720px;
+      animation: fadeIn 1.2s ease both;
+    }
+
+    .btn {
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:14px;
+      background:#ffffff;
+      color:#0b1020;
+      font-weight:800;
+      text-decoration:none;
+      border:1px solid rgba(255,255,255,.25);
+      box-shadow: 0 12px 30px rgba(0,0,0,.35);
+      transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+      animation: fadeIn 1.4s ease both;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 16px 38px rgba(0,0,0,.45); }
+
+    .row { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
+
+    .review {
+      margin-top:30px;
+      padding:16px;
+      background: rgba(255,255,255,0.08);
+      border-radius:14px;
+      font-size:15px;
+      line-height:1.6;
+      color:#e8f4ff;
+      animation: fadeIn 1.6s ease both;
+    }
+
+    .tiny {
+      margin-top:16px; opacity:.9; font-size:14px;
+    }
+    .tiny a { color:#c7e1ff; }
+
+    @keyframes fadeIn {
+      from { opacity:0; transform: translateY(10px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- живой фон -->
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <main>
+    <h1>English Panjakent</h1>
+    <p class="sub">
+      Английский язык с нуля до уверенного общения.  
+      У нас нет скучных уроков — только полезная информация, простые объяснения и интересные материалы.
+    </p>
+
+    <div class="row">
+      <a class="btn" href="https://www.instagram.com/englishpanjakent/" target="_blank" rel="noopener">
+        Перейти в Instagram @englishpanjakent
+      </a>
+    </div>
+		<div class="review">
+      <strong>Отзыв ученика:</strong><br>
+      «Я начал учить английский всего 3 месяца назад. Раньше я не мог уверенно говорить,
+      но благодаря курсу <b>English Panjakent</b> я уже свободно общаюсь. Уроки интересные и полезные.
+      Спасибо!»
+    </div>
+
+    <p class="tiny">
+      Страница откроется в новой вкладке.
+    </p>
+  </main>
+</body>
+</html>
